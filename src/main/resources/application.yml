@@ -1,6 +1,5 @@
 server:
   port: 8761
-  address: 0.0.0.0
 spring:
   application:
     name: server
@@ -17,6 +16,8 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url: 
+      defaultZone: http://54.180.144.64:8761/eureka/
   instance:
     ip-address: 54.180.144.64
     prefer-ip-address: true
