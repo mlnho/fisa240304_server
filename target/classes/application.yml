@@ -13,11 +13,9 @@ management: # 엔트포인트 노출 설정 애플리케이션을 배포하는 �
         include: "*"
 
 eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url: 
-      defaultZone: http://54.180.144.64:8761/eureka/
   instance:
     ip-address: 54.180.144.64
     prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
