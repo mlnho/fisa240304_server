@@ -17,5 +17,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
   instance:
-    hostname: 54.180.144.64
+    ip-address: 54.180.144.64
     prefer-ip-address: true
