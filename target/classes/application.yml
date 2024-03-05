@@ -14,8 +14,9 @@ management: # 엔트포인트 노출 설정 애플리케이션을 배포하는 �
 
 eureka:
   instance:
-    ip-address: 54.180.144.64
+    hostname: 43.202.50.68 #EC2 public IP
     prefer-ip-address: true
   client:
     register-with-eureka: false
-    fetch-registry: false
+    service-url:
+      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
